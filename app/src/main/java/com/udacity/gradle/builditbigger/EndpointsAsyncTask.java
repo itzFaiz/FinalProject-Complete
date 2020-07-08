@@ -11,54 +11,51 @@ import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
 
 import java.io.IOException;
 
-class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
+public class EndpointsAsyncTask extends AsyncTask<Context,Void,String> {
+
     private static MyApi myApiService = null;
     private Context context;
     private TaskCompleteListener mTaskCompleteListener;
 
-    public EndpointsAsyncTask(TaskCompleteListener listener) {
-        mTaskCompleteListener = listener;
+    public EndpointsAsyncTask(TaskCompleteListener taskCompleteListener) {
+        mTaskCompleteListener = taskCompleteListener;
     }
 
     public EndpointsAsyncTask() {
 
     }
 
+
     @Override
     protected String doInBackground(Context... params) {
-        if (myApiService == null) {  // Only do this once
+        if (myApiService == null){
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
-                    new AndroidJsonFactory(), null)
-
-                    .setRootUrl("http://192.168.0.18:8080/_ah/api/")
+                    new AndroidJsonFactory(),null)
+                    .setRootUrl("192.168.0.105:8080/_ah/api")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
                             abstractGoogleClientRequest.setDisableGZipContent(true);
                         }
                     });
-
-
-            myApiService = builder.build();
+            myApiService  = builder.build();
         }
-
         context = params[0];
 
         try {
             return myApiService.getRandomJoke().execute().getData();
-        } catch (IOException e) {
+        }catch (IOException  e){
             return "";
         }
-    }
 
+
+    }
     @Override
-    protected void onPostExecute(String result) {
-        if (result != null) {
-            mTaskCompleteListener.onTaskComplete(result);
-        }
+    protected void onPostExecute(String string) {
+        if (string != null)
+            super.onPostExecute(string);
     }
-
-    public interface TaskCompleteListener {
-        void onTaskComplete(String result);
+    public interface TaskCompleteListener{
+        void onTaskComplete(String  string);
     }
 }
