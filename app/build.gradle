@@ -6,7 +6,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.2'
+        classpath 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.3'
     }
 }
 
@@ -49,16 +49,14 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     endpointsServer project(path: ':backend', configuration: 'endpoints')
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support:support-media-compat:28.0.0'
-    implementation 'com.android.support:support-v4:28.0.0'
-    freeImplementation  'com.google.android.gms:play-services-ads:11.8.0'
-    implementation 'com.google.api-client:google-api-client:1.23.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    freeImplementation  'com.google.android.gms:play-services-ads:19.2.0'
+    implementation 'com.google.api-client:google-api-client:1.30.7'
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
-    implementation 'com.google.code.findbugs:jsr305:3.0.1'
-    implementation 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.2'
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+    implementation 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.3'
 
-    testImplementation 'junit:junit:4.13'
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
 
     androidTestImplementation 'androidx.test:runner:1.2.0'
