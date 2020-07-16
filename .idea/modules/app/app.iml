@@ -31,10 +31,10 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../app">
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/endpoints" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/freeDebug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/aidl_source_output_dir/freeDebug/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/free/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/renderscript_source_output_dir/freeDebug/out" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/aidl_source_output_dir/freeDebug/out" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/freeDebug/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/res/rs/free/debug" type="java-resource" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/freeDebug/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/freeDebug/resources" type="java-resource" />
@@ -43,10 +43,10 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/freeDebug/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/freeDebug/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/freeDebug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/aidl_source_output_dir/freeDebugAndroidTest/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/freeDebugAndroidTest/out" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/renderscript_source_output_dir/freeDebugAndroidTest/out" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/aidl_source_output_dir/freeDebugAndroidTest/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/androidTest/free/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/renderscript_source_output_dir/freeDebugAndroidTest/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/res/rs/androidTest/free/debug" type="java-test-resource" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/androidTestFreeDebug/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/androidTestFreeDebug/resources" type="java-test-resource" />
@@ -141,7 +141,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:rules:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-core:3.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:runner:1.2.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.multidex:multidex-instrumentation:2.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:core:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-idling-resource:3.2.0@aar" level="project" />
@@ -150,26 +149,16 @@
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.1.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.3@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.endpoints:endpoints-framework-tools:2.0.10@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.endpoints:endpoints-framework:2.0.10@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.api-client:google-api-client-appengine:1.21.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.api-client:google-api-client-servlet:1.21.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.api-client:google-api-client:1.30.7@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.oauth-client:google-oauth-client-appengine:1.21.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.oauth-client:google-oauth-client-servlet:1.21.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.oauth-client:google-oauth-client:1.30.5@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.http-client:google-http-client-android:1.23.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.http-client:google-http-client-jackson2:1.32.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.http-client:google-http-client-appengine:1.21.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.http-client:google-http-client-jdo:1.21.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.http-client:google-http-client:1.34.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.5.10@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.12@jar" level="project" />
     <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.11@jar" level="project" />
     <orderEntry type="library" name="Gradle: io.opencensus:opencensus-contrib-http-util:0.24.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: io.swagger:swagger-core:1.5.9@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:guava:28.1-android@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:failureaccess:1.0.1@jar" level="project" />
@@ -180,25 +169,7 @@
     <orderEntry type="library" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.18@jar" level="project" />
     <orderEntry type="library" name="Gradle: io.opencensus:opencensus-api:0.24.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: io.grpc:grpc-context:1.22.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.6.4@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-joda:2.4.5@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.4.5@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.9@jar" level="project" />
-    <orderEntry type="library" name="Gradle: javax.servlet:servlet-api:2.5@jar" level="project" />
-    <orderEntry type="library" name="Gradle: io.swagger:swagger-models:1.5.9@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.6.4@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.appengine:appengine-api-1.0-sdk:1.9.56@jar" level="project" />
-    <orderEntry type="library" name="Gradle: javax.jdo:jdo2-api:2.3-eb@jar" level="project" />
-    <orderEntry type="library" name="Gradle: javax.transaction:transaction-api:1.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-nop:1.7.21@jar" level="project" />
-    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.21@jar" level="project" />
-    <orderEntry type="library" name="Gradle: io.swagger:swagger-annotations:1.5.9@jar" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.2.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: joda-time:joda-time:2.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.12@jar" level="project" />
-    <orderEntry type="library" name="Gradle: javax.validation:validation-api:1.1.0.Final@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.appengine:appengine-tools-sdk:1.9.56@jar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.multidex:multidex:2.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads:19.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.browser:browser:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.1.0@aar" level="project" />
