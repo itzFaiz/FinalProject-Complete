@@ -2,6 +2,7 @@ package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.view.View;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -53,8 +54,13 @@ public class EndpointsAsyncTask extends AsyncTask<Context,Void,String> {
     @Override
     protected void onPostExecute(String string) {
         if (string != null)
-            super.onPostExecute(string);
+           mTaskCompleteListener.onTaskComplete(string);
+
     }
+
+    public void execute(View.OnClickListener onClickListener) {
+    }
+
     public interface TaskCompleteListener{
         void onTaskComplete(String  string);
     }
