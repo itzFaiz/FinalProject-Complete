@@ -26,17 +26,17 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new EndpointsAsyncTask(new EndpointsAsyncTask.TaskCompleteListener() {
-                    @Override
-                    public void onTaskComplete(String result) {
-                        Intent intent = new Intent(MainActivity.this, JokesActivity.class);
-                        intent.putExtra(JokesActivity.JOKE_KEY, result);
-                        startActivity(intent);
-                        Toast.makeText(MainActivity.this, "Telling Jokes", Toast.LENGTH_SHORT).show();
+                                   new EndpointsAsyncTask(new EndpointsAsyncTask.TaskCompleteListener() {
+                            @Override
+                            public void onTaskComplete(String result) {
+                                Intent intent = new Intent(MainActivity.this, JokesActivity.class);
+                                intent.putExtra(JokesActivity.JOKE_KEY, result);
+                                startActivity(intent);
+                                Toast.makeText(MainActivity.this, "Telling Jokes", Toast.LENGTH_SHORT).show();
 
                     }
-                }).execute(this);
-//                Toast.makeText(MainActivity.this, "Showing Jokes", Toast.LENGTH_SHORT).show();
+                }).execute(MainActivity.this);
+                Toast.makeText(MainActivity.this, "Showing Jokes", Toast.LENGTH_SHORT).show();
             }
         });
     }
