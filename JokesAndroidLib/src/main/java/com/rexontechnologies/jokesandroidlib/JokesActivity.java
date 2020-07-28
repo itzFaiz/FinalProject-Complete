@@ -1,5 +1,6 @@
 package com.rexontechnologies.jokesandroidlib;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -20,8 +21,11 @@ public class JokesActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_jokes);
         jokeText = (TextView) findViewById(R.id.joke_text_view);
-        String key = getIntent().getStringExtra(JOKE_KEY);
-        jokeText.setText(key);
+        Intent i = getIntent();
+        if (i.hasExtra(JOKE_KEY)) {
+            String key = i.getStringExtra(JOKE_KEY);
+            jokeText.setText(key);
+        }
     }
 
     @Override

@@ -58,14 +58,15 @@ public class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
     protected void onPostExecute(String string) {
         if (string != null)
             mTaskCompleteListener.onTaskComplete(string);
-//        Intent intent = new Intent(context, JokesActivity.class);
-//        intent.putExtra(Intent.EXTRA_TEXT, string);
+
+
+    }
+
+//    public void execute(View.OnClickListener onClickListener,String s) {
+//                Intent intent = new Intent(context, JokesActivity.class);
+//        intent.putExtra(Intent.EXTRA_TEXT, s);
 //        context.startActivity(intent);
-
-    }
-
-    public void execute(View.OnClickListener onClickListener) {
-    }
+//    }
 
     public interface TaskCompleteListener {
         void onTaskComplete(String string);
